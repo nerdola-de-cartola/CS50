@@ -1,0 +1,112 @@
+@media (min-width: 992px) {
+    #navbarNavAltMarkup {
+        margin-left : 40em;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #192fcc;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+#header {
+    background-color: #bbd7e39e
+}
+
+
+.navbar-brand {
+    margin:0;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav-link.active {
+    font-size: 1.35rem;
+}
+
+.nav-link.active:hover {
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    max-width: 62.5rem;
+    min-width: 50%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aaaaaa;
+    border-radius: 4px 30px 30px;
+}
+
+.main p {
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
+    width: 62.5rem;
+}
+
+#wellcome {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px;
+}
+
+#message {
+    height: 8rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+}
+
+footer h4, footer li{
+    text-align: center;
+    font-weight: 100;
+    cursor: default;
+
+}
+#footer {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.short-page {
+    margin-top: 6.2rem;
+}
+
+.social-media {
+    text-decoration: none;
+    font-weight: 100;
+    color: #212529;
+}

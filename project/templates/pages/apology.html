@@ -1,0 +1,21 @@
+{% extends "layouts/layout.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="/styles/apology.css">
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <div class="error">
+
+            <h2>Error code {{  code  }}</h2>
+            <img src="/images/no-questions.svg" alt="">
+            <p>Sorry, {{ message }}</p>
+            <div class="links">
+                <a href="/">Enter room</a>
+                or
+                <a href="/create-room">Create your own room</a>.
+            </div>
+        </div>
+    </div>
+{% endblock %}

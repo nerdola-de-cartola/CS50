@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+    --gray-medium: #EAECF2;
+
+    /*Updates 1rem=16px to 1rem=10px to make easy for using rem*/
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--background);
+}
+
+body, input, button, textarea {
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+
+    margin: -1px;
+    padding: 0;
+    border-width: 0;
+
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-size: clamp(10px, 7vw ,5rem);
+	font-weight: 700;
+	color: var(--black);
+}
+
+.capital-letter {
+    color: var(--blue);
+    font-size: clamp(20px, 8vw ,6rem);
+}
+
+.content {
+    width: 100%;
+    margin: 0px auto;
+}
+
+input, button, .button {
+    height: 5rem;
+
+    border-radius: 0.8rem;
+}
+
+button, .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+
+    line-height: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background: var(--blue);
+
+    transition: filter 0.2s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+    width: 2rem;
+
+    margin-right: 1rem;
+}
+
+button.outlined,
+.button.outlined {
+    color: var(--blue);
+    background: var(--white);
+    border: 0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red {
+    background: var(--red);
+
+    color: var(--white);
+}
+
+button.gray,
+.button.gray {
+    background: var(--gray-light);
+
+    color: var(--gray-dark);
+}
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img {
+    width: 16.7rem;
+}

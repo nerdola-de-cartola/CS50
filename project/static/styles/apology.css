@@ -1,0 +1,23 @@
+img {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: var(--blue);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    margin: 0.5rem 0;
+}

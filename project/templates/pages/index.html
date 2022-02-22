@@ -1,0 +1,30 @@
+{% extends "layouts/layout.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="/styles/home.css">
+{% endblock %}
+
+{% block body %}
+    <div id="home" class="content">
+
+        <header>
+            <a href="/" class="title"><span class="capital-letter">Q</span>uestionary</a>
+        </header>
+
+        <div id="bg">
+            <div class="ball top"></div>
+            <div class="ball bottom"></div>
+        </div>
+
+        <main>
+
+            {% if "enter-room" in parts %}
+                {% include "parts/enter-room.html" %}
+
+            {% elif "create-room" in parts %}
+                {% include "parts/create-room.html" %}
+
+            {% endif %}
+        </main>
+    </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+sort1 uses: Bubble sort
+
+How do you know?: sort1 is very quick to sort the lists that already have been solved but is the slowest algorithm for random or reversed lists.
+
+sort2 uses: Merge sort
+
+How do you know?: sort3 is almost always the fastest algorithm exept by the case of the lists that have already been solved, in that case sort2 is tied with sort1.
+
+sort3 uses: Selection sort
+
+How do you know?: sort3 is always the slowest algorithm to solve any of the lists that have already been solved.
+
+TESTS
+-----------------------------------------------------------------------------------------
+
+for sorted 5.000
+sort1 takes: 0.010s
+sort2 takes: 0.011s
+sort3 takes: 0.035s
+
+for sorted 10.000
+sort1 takes: 0.017s
+sort2 takes: 0.026s
+sort3 takes: 0.224s
+
+for sorted 50.000
+sort1 takes: 2.575s to 6.476s
+sort2 takes: 3.169s to 6.903s
+sort3 takes: 7.907s to 10.000s
+
+-----------------------------------------------------------------------------------------
+
+for reversed 5.000
+sort1 takes: 0.105s
+sort2 takes: 0.012s
+sort3 takes: 0.034s
+
+for reversed 10.000
+sort1 takes: 0.491s
+sort2 takes: 0.093s
+sort3 takes: 0.204s
+
+for reversed 50.000
+sort1 takes: 14.968s
+sort2 takes: 2.477s
+sort3 takes: 9.549s
+
+-----------------------------------------------------------------------------------------
+
+for random 5.000
+sort1 takes: 0.132s
+sort2 takes: 0.014s
+sort3 takes: 0.032s
+
+for random 10.000
+sort1 takes: 0.517s
+sort2 takes: 0.023s
+sort3 takes: 0.522s
+
+for random 50.000
+sort1 takes: 17.267s
+sort2 takes: 3.596s
+sort3 takes: 8.995s

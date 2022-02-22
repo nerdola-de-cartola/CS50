@@ -1,0 +1,6 @@
+cs50
+random
+Flask
+Flask-Session
+requests
+werkzeug

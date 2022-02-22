@@ -1,0 +1,72 @@
+{% extends "layouts/layout.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="/styles/room.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock %}
+
+{% block scripts %}
+    <script src="/scripts/main.js" defer type="module"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="room" class="content">
+        <header>
+
+            <a href="/" class="title"><span class="capital-letter">Q</span>uestionary</a>
+
+            <div class="buttons">
+
+                <div class="button outlined" id="room-id" data-id="{{ room_id }}">
+                    #{{ room_id }}
+                    <img src="/images/copy.svg" alt="">
+                </div>
+
+                <a href="/create-room" class="button">
+                    <img src="/images/users-white.svg" alt="">
+                    Create room
+                </a>
+
+            </div>
+        </header>
+        <main>
+            <section id="question_forms">
+
+                <h2>Make your question</h2>
+
+                <form action="/room/{{ room_id }}" method="POST">
+
+                    <label for-id="question" class="sr-only">What do you want to ask?</label>
+                    <textarea id="question" name="question" placeholder="What do you want to ask?"></textarea>
+
+                    <footer>
+
+                        <div>
+                            <img src="/images/lock.svg" alt="">
+                            This question is anonymous
+                        </div>
+
+                        <button>Send</button>
+
+                    </footer>
+                </form>
+            </section>
+            <section id="questions">
+
+                <h2 class="sr-only">Questions</h2>
+
+                <div class="questions">
+                    
+                    {% if questions %}
+                        {% include "parts/questions.html" %}
+                        {% include "parts/modal.html" %}
+                        
+                    {% else %}
+                        {% include "parts/no-questions.html" %}
+                        
+                    {% endif %}
+                </div>
+            </section>
+        </main>
+    </div>
+{% endblock %}
